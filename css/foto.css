@@ -1,0 +1,80 @@
+article#mapa img{
+	width: 875px;	
+	height: 355px;
+}
+article.f ul{
+	background-color:;
+	width: 905px;
+	height: ;
+	margin: 0px;
+	margin-left: -12px;
+	padding: 10px;
+	overflow: hidden;
+	list-style: none;
+
+	display: inline-block;
+}
+article.f ul li{
+	float: left;
+	width:204px;
+	height:140px;
+	margin: 3px;
+	border: 5px solid black;
+	background-color:;
+	-webkit-transition:all .6s ease-in;
+
+	background-size: 220px 170px;
+	background-position:50% 50%;
+}
+article.f ul li:hover{
+	-webkit-transform: scale(1.1);
+}
+article.f ul li#f_1{
+	background-image:url('../img/galeria/albor_1.jpg');}
+article.f ul li#f_2{
+	background-image:url('../img/galeria/albor_2.jpg');}
+article.f ul li#f_3{
+	background-image:url('../img/galeria/albor_3.jpg');}
+article.f ul li#f_4{
+	background-image:url('../img/galeria/albor_4.jpg');}
+article.f ul li#f_5{
+	background-image:url('../img/galeria/albor_5.jpg');}
+article.f ul li#f_6{
+	background-image:url('../img/galeria/albor_6.png');}
+article.f ul li#f_7{
+	background-image:url('../img/galeria/albor_7.png');}
+article.f ul li#f_8{
+	background-image:url('../img/galeria/albor_8.png');}
+article.f ul li#f_9{
+	background-image:url('../img/galeria/albor_9.png');}
+article.f ul li#f_10{
+	background-image:url('../img/galeria/albor_10.png');}
+article.f ul li#f_11{
+	background-image:url('../img/galeria/albor_11.jpg');}
+article.f ul li#f_12{
+	background-image:url('../img/galeria/albor_12.jpg');}
+article.f ul li#f_13{
+	background-image:url('../img/galeria/albor_13.jpg');}
+article.f ul li#f_14{
+	background-image:url('../img/galeria/albor_14.jpg');}
+article.f ul li#f_15{
+	background-image:url('../img/galeria/albor_15.jpg');}
+article.f ul li#f_16{
+	background-image:url('../img/galeria/albor_16.jpg');}
+article.f ul div{
+	width: 200px;
+	background-color:;
+	margin: 333px auto 0px auto;
+}
+article.f div a.f1{
+	margin: auto 0px 0px 0px ;
+	padding-bottom: 20px;
+	text-decoration: none;
+	color:green;
+	font-size: 20px;
+}
+article.f div a img{
+	margin:0px;
+	width:20px;
+	height:20px;
+}

@@ -1,0 +1,141 @@
+/*univesal*/
+a{
+	text-decoration: none;
+	color: black;}
+div#bodi , header#top a div , #iframe_1, div#footer{
+width:900px;}
+/*fundo da pagina*/
+body{
+	background-image:url('https://cdn.pixabay.com/photo/2017/01/22/18/58/gradient-2000574_1280.pn g');
+	background-color: #e25c039f;
+	padding-top:0px;}
+/*corpo da pagina*/
+div#bodi{
+	background-color:#d61b0e;
+	margin: 530px auto 0px auto;
+	w idth:950px;
+	height:px;}
+/*topo,menu,logo*/
+div#bodi header#top {
+	position: absolute;
+	margin-top: -513px;}
+/*logo da pagina*/
+div#bodi header#top img {
+	position: relative;
+	border:7px solid;
+	border-color: rgb(91,55,21);
+	margin-top: 0px;
+	margin-left:-199px;
+	padding: 5px;
+	background-color: rgb(200,164,109);
+	height:90px; 
+	width:170px;}
+/*Nome do museu*/
+div#bodi header#top a div{
+	background-color:rgb(140,102,53);/*#CDBE70;*/
+	border: 6px solid;
+	padding-left: 5px;
+	margin-top: -119px;
+	margin-left: px;
+	w idth: 934px;
+	height:102px;}
+div#bodi header#top a div h1{
+	margin-top:-5px;
+	margin-left:;
+	font-size: 50px;
+	color:rgb(91,55,21);}
+div#bodi header#top a div h2{
+	color: rgb(200,164,109);
+	border:;
+	font-size: 40px;
+	margin-top:-40px;}
+/*menu da pagina*/
+div#bodi header#top nav{
+	position: relative;
+	margin-top:10px;
+	margin-left: -148px;}
+div#bodi header#top nav ul.menu{
+	list-style: none;
+	margin-top: -2px;
+	margin-left:-92px;
+	width: 195px;}
+div#bodi header#top nav ul.menu li{
+	text-align: center;
+	font-size:25px;
+	background-color: #CDBE70;
+	padding-bottom: 6px;
+	border:5px solid;
+	margin-bottom: 5px;}
+div#bodi header#top nav ul.menu li:hover{
+	background-color:rgb(200,164,109); ;
+	font-size:px;
+	color:rgb(91,55,21);}
+/*corpo da pagina pricipal*/
+div#bodi section#conteudo{
+	position: absolute;
+	background-color:;
+	border:6px solid;
+	border-color:black;
+	color:;
+	margin-top:-406px;
+	width:905px; 
+	height: ;}
+div#bodi section#conteudo iframe#iframe_1{
+	background-color: #CDBE70;
+	border:none;
+	padding:-6px;
+	width:905px;
+	height:406px;
+	overflow: hidden;}
+div#bodi section#conteudo iframe#iframe_1::-webkit-scrollbar{
+	display: none;}
+/*corpo de publicação*/
+div#bodi div.lado_direito{
+	background-color: #CDBE70;
+	border:6px solid;
+	width: 180px;
+	height:406px;
+ 	position: absolute;
+ 	margin-left: 930px;
+ 	margin-top:-406px;
+	padding: 0px;}
+div#bodi div.lado_direito h5{
+	background-color: rgb(140,102,53);
+	color: rgb(200,164,109);
+	width:176px;
+	border:6px solid;
+	border-color: black;
+	margin-top:-6px;
+	margin-left: -6px;
+	padding:2px;
+	font-size: 25px;
+	text-align: center;}
+div#bodi div.lado_direito ul{list-style: none;margin-top:-38px;}
+div#bodi div.lado_direito ul li{margin-left: -36px;margin-bottom: 8px;}
+div#bodi div.lado_direito ul li img{width: 171px;}
+/*Rodapé*/
+div#bodi div#footer{
+	position: absolute;
+	background-color: #CDBE70;
+	border: 6px solid;
+	width:905px;
+	/*mecher*/
+	height:100px;
+	margin-top: 6px;
+	padding:0px;
+	text-align: center;
+	font-size: 18px;}
+div#bodi div#footer p{
+	p osition: relative;
+	margin-bottom: -11px;}
+div#bodi div#footer p.p_1{
+	margin-top:px;
+	margin-bottom: px;}
+div#bodi div#footer p.p_2{margin-top: px;}
+div#bodi div#footer p.p_3{
+	background-color: ;
+	margin-top: px;
+	margin-bottom:px;}
+div#bodi div#footer a:hover{
+	font-size:px;
+	color: blue;}
