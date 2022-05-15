@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <title>Digit@l Net</title>
+    <style>
+      .desativado {
+        display: none;
+      }
+      .ativo {
+        width: 50px;
+      }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <!-- <link href="style.css" rel="stylesheet"/> -->
+    <!-- script -->
+    <script src="script/conf.js"></script>
+    <script src="script/confPage.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                  <!-- MENU DA PAGINA -->
+                  <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">
+                        INICIO
+                      </a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="404.html">
+                          CAIXA
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link active" aria-current="page">
+                            TURMA
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="curso.html">
+                        CURSO
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="404.html">SOBRE</a>
+                    </li>
+                    <span class="col"></span>
+                    <li class="nav-item dropdown">
+                      <div class="btn-group col-lg-1" id="user">
+                        <div type="button" class="btn btn-secondary" >Neilson</div>
+                        <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Configuração</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><button class="dropdown-item" onclick="sair()">Sair</button></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                  <br/>
+                  <div class="corpo">
+                    <!-- inicio do lado direito -->
+                    <!-- <div class="row g-5"> -->
+                      <!-- <div class="col-md-5 col-lg-4 order-md-last">
+                        <div class="card p-2"> -->
+
+                          <!-- <div class="d-flex justify-content-between align-items-center mb-3 card-head">
+                            <h5 class="card-title" >ADICIONAR NOVO CURSO</h5>
+                          </div> -->
+                          <!-- <form class="card-body">
+                            <span id="idd" style="display: none;"></span>
+                              <div class="mb-3">
+                                <label for="inputNome" class="col-form-label">NOME:</label>
+                                <input type="text" class="form-control" id="inputNome">
+                              </div>
+                              <div class="mb-3">
+                                <label for="inputDataNac" class="col-form-label">DATA NAC.:</label>
+                                <input type="date" class="form-control" id="inputDataNac">
+                              </div>
+                              <div class="mb-1">
+                                <label for="inputCpf" class="col-form-label">CPF:</label>
+                                <input type="text" aria-expanded="" max="11" class="form-control" id="inputCpf">
+                              </div>
+                              <div class="mb-1">
+                                <label for="inputRg" class="col-form-label">RG:</label>
+                                <input type="text" aria-expanded="" max="11" class="form-control" id="inputRr">
+                              </div>
+                              <div class="mb-1">
+                                <label for="inputFone" class="col-form-label">FONE:</label>
+                                <input type="tel" class="form-control" id="inputFone">
+                              </div>
+                              <hr>
+                              <div>
+                                <span>CURSO</span>
+                                <div class="mb-3 row">
+                                  <!-- <label for="selectCurso" class="col-sm-2 col-form-label">CURSO</label> - ->
+                                  <div class="col-sm-10">
+                                    <select class="form-select" aria-label="Default select example">
+                                      <option selected>CURSOS</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-1">
+                                <label for="inputDataInicio" class="col-form-label">DATA INICIO:</label>
+                                <input type="date" class="form-control" id="inputDataInicio">
+                              </div>
+                              <span for="inputFone" class="col-form-label">SEMANAS:</span>
+                              <div class="mb-1">
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="input0" value="option1">
+                                  <label class="form-check-label" for="input0">SEG</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="input1" value="option2">
+                                  <label class="form-check-label" for="input1">TER</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="input2" value="option1">
+                                  <label class="form-check-label" for="input2">QUA</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="input3" value="option2">
+                                  <label class="form-check-label" for="input3">QUI</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="input4" value="option1">
+                                  <label class="form-check-label" for="input4">SEX</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="input5" value="option2">
+                                  <label class="form-check-label" for="input5">SAB</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="input6" value="option3" disabled>
+                                  <label class="form-check-label" for="input6">DOM</label>
+                                </div>
+                              </div>
+                              <div class="mb-1">
+                                <label for="inputHoraInicio" class="col-form-label">HORARIOS:</label>
+                                <input type="time" class="form-control" id="inputHoraInicio">
+                              </div>
+                              <div class="mb-1">
+                                <label for="inputPacela" class="col-form-label">PACELAS:</label>
+                                <input type="number" class="form-control" id="inputPacela">
+                              </div>
+                              <div class="mb-1">
+                                <label for="inputValor" class="col-form-label">VALOR:</label>
+                                <input type="number" step="0.01" value="99.9" class="form-control" id="inputValor" disabled>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="checkboxPromocao" value="option" onchange="chPro(this)">
+                                <label class="form-check-label" for="checkboxPromocao">PROMOÇÃO</label>
+                              </div>
+                              <span id="promocao"></span> -->
+                              <!-- <div class="mb-1">
+                                <label for="inputVencimento" class="col-form-label">VENCIMENTO:</label>
+                                <input type="date" class="form-control" id="inputVencimento">
+                              </div>
+                          </form> -->
+                          
+                        <!-- </div> -->
+                      <!-- </div> -->
+                      <!-- inicio do corpo pricipal -->
+                      <div class="col-md-12 col-lg-12">
+                        <h4 class="mb-3">Turmas / Alunos</h4>
+                        <table class="table col-md-5 col-lg4">
+                          <thead class="table-light">
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">NOME CURSO</th>
+                            <th scope="col">VALOR TOTAL</th>
+                            <!-- <th scope="col">DATA/HORA</th>
+                            <th scope="col">QUANT.</th>
+                            <th scope="col">VALOR</th>
+                            <th scope="col">VALOR TOTAL</th>
+                            <th scope="col">VALOR RECEBIDO</th> -->
+                            <th scope="col" class=" justify-content-md-center"><a class="btn btn-primary" href="addAlunos.html?id=0">ADD</a></th>
+                          </tr>
+                        </thead>
+                        <tbody >
+                        </tbody>
+                      </table>
+                      </div>
+                    </div>
+                  </div>
+                <!-- </div>
+              </div>
+            </div> -->
+                  </div>
+                  <footer class="my-5 pt-5 text-muted text-center text-small">
+                    <p class="mb-1">© 2017–2021 Company Name</p>
+                    <ul class="list-inline">
+                      <li class="list-inline-item"><a href="https://getbootstrap.com/docs/5.0/examples/checkout/#">Privacy</a></li>
+                      <li class="list-inline-item"><a href="https://getbootstrap.com/docs/5.0/examples/checkout/#">Terms</a></li>
+                      <li class="list-inline-item"><a href="https://getbootstrap.com/docs/5.0/examples/checkout/#">Support</a></li>
+                    </ul>
+                  </footer>
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+      <!-- Option 2: Separate Popper and Bootstrap JS -- >
+      
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+    
+    <script>
+      var exampleModal = document.getElementById('inputAluno');
+      
+      function chPro (t){
+        console.log(t.checked);
+      }
+      exampleModal.addEventListener('show.bs.modal', function (event) {
+        // Button that triggered the modal
+        var button = event.relatedTarget;
+        // Extract info from data-bs-* attributes
+        var recipient = button.getAttribute('data-bs-whatever');
+        // If necessary, you could initiate an AJAX request here
+        // and then do the updating in a callback.
+        //
+        // Update the modal's content.
+        var modalTitle = exampleModal.querySelector('.modal-title');
+        var modalBodyInput = exampleModal.querySelector('.modal-body input');
+        // document.getElementById("").setAttribute("click", function(s){
+        //   console.log(s);
+        // })
+        exampleModal.querySelector("#checkboxPromocao").addEventListener("onchange", function (){
+          console.log("ok");
+        });
+        exampleModal.querySelector(".btn-primary").addEventListener("onclick", function (){
+          let uNome = exampleModal.querySelector("#inputNome");
+          let uDataNac = exampleModal.querySelector("#inputDataNac");
+          let uCpf = exampleModal.querySelector("#inputCpf");
+          let uRg = exampleModal.querySelector("#inputRg");
+          let uFone = exampleModal.querySelector("#inputFone");
+          // let cCurso = exampleModal.querySelector("#input");
+          let cDataInicio = exampleModal.querySelector("#inputDataInicio");
+          // let cSeg = exampleModal.querySelector("#input0");
+          let cHorarios = exampleModal.querySelector("#inputHoraInicio");
+          let cPacelas = exampleModal.querySelector("#inputPacela");
+          let cVencimento = exampleModal.querySelector("#inputVencimento");
+          let cValor = exampleModal.querySelector("#inputValor");
+        })
+        modalTitle.textContent += recipient;
+        modalBodyInput.value = recipient;
+      })
+    </script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+   
+  </body>
+</html>

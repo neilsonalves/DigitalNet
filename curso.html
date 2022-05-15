@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <title>Digit@l Net</title>
+    <style>
+      .desativado {
+        display: none;
+      }
+      .ativo {
+        width: 50px;
+      }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <!-- <link href="style.css" rel="stylesheet"/> -->
+    <!-- script -->
+    <script src="script/confPage.js"></script>
+    <script src="script/database.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                  <!-- MENU DA PAGINA -->
+                  <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">
+                        INICIO
+                      </a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="404.html">
+                          CAIXA
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="alunos.html">
+                        TURMA
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link active" aria-current="page">
+                          CURSO
+                        </span>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="404.html">SOBRE</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li> -->
+                    <span class="col"></span>
+                    <li class="nav-item dropdown">
+                      <!-- <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                      </ul> -->
+                      <div class="btn-group col-lg-1" id="user">
+                        <div type="button" class="btn btn-secondary" >Neilson</div>
+                        <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Configuração</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><button class="dropdown-item" onclick="sair()">Sair</button></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                  <br/>
+                  <div class="corpo">
+                    <!-- inicio do lado direito -->
+                    <div class="row g-5">
+                      <div class="col-md-5 col-lg-4 order-md-last">
+                        <div class="card p-2">
+
+                          <div class="d-flex justify-content-between align-items-center mb-3 card-head">
+                            <h5 class="card-title" >ADICIONAR NOVO CURSO</h5>
+                          </div>
+                          <form class="card-body">
+                            <span id="idd" style="display: none;"></span>      
+                            <div class="mb-3">
+                              <label for="inputNomeCurso" class="">NOME CURSO:</label>
+                              <input type="text" class="" id="inputNomeCurso">
+                            </div>
+                            <div class="mb-3">
+                              <label for="inputValorCurso" class="">VALOR TOTAL:</label>
+                              <input type="number" step="0.01" class="" id="inputValorCurso">
+                            </div>
+                            <span id="check"></span>
+                            <div class="card-header">
+                              <button type="reset" class="btn btn-secondary">Limpar</button>
+                              <button id="btnAddCurso" type="button" class="btn btn-primary" >Salva</button>
+                            </div>
+                          </form>
+                          
+                        </div>
+                      </div>
+                      <!-- inicio do corpo pricipal -->
+                      <div class="col-md-7 col-lg-8">
+                        <h4 class="mb-3">CURSO</h4>
+                        <table class="table col-md-5 col-lg4">
+                          <thead class="table-light">
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">NOME CURSO</th>
+                            <th scope="col">VALOR TOTAL</th>
+                            <!-- <th scope="col">DATA/HORA</th>
+                            <th scope="col">QUANT.</th>
+                            <th scope="col">VALOR</th>
+                            <th scope="col">VALOR TOTAL</th>
+                            <th scope="col">VALOR RECEBIDO</th> -->
+                            <th scope="col" class=" justify-content-md-center">---</th>
+                          </tr>
+                        </thead>
+                        <tbody >
+                        </tbody>
+                      </table>
+                      </div>
+                    </div></div></div></div></div>
+                  </div>
+                  <footer class="my-5 pt-5 text-muted text-center text-small">
+                    <p class="mb-1">© 2017–2021 Company Name</p>
+                    <ul class="list-inline">
+                      <li class="list-inline-item"><a href="https://getbootstrap.com/docs/5.0/examples/checkout/#">Privacy</a></li>
+                      <li class="list-inline-item"><a href="https://getbootstrap.com/docs/5.0/examples/checkout/#">Terms</a></li>
+                      <li class="list-inline-item"><a href="https://getbootstrap.com/docs/5.0/examples/checkout/#">Support</a></li>
+                    </ul>
+                  </footer>
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+      <!-- Option 2: Separate Popper and Bootstrap JS -- >
+      
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+    
+    <script>
+      var ipNomeCurso = document.getElementById("inputNomeCurso");
+      var ipValorCurso = document.getElementById("inputValorCurso");
+      var ipIdCurso = document.getElementById("idd");
+      
+      var BodyTabela = document.querySelector("tbody");
+      curso_list();
+      
+      document.querySelector('.btn-primary').addEventListener("click", function (tx){
+        if(!ipIdCurso.value){
+          if((ipNomeCurso.value != "") || (ipValorCurso.value != "")){
+            if(ipNomeCurso.value != ""){
+              if(ipValorCurso.value != ""){
+                addDados("INSERT INTO cursos (nome, valor) VALUES ('"+ipNomeCurso.value+"', '"+ipValorCurso.value+"')");
+                // curso_list();
+                ipNomeCurso.value = "";
+                ipValorCurso.value = "";
+                ipIdCurso.value = "";
+              }else
+              alert("Tem que ter um Valor!");
+            }else
+              alert("Tem que ter um Nome!");
+          }else
+            alert("Tem que ter um conteudo!");
+        }else{
+          let ch =  document.getElementById("check");
+          // console.log(ipIdCurso.value)
+          if(!document.getElementById("flexCheckDefault").checked)
+            addDados("UPDATE cursos SET nome='"+ipNomeCurso.value+"', valor='"+ipValorCurso.value+"' WHERE id='"+ipIdCurso.value+"'");
+          else
+            addDados("INSERT INTO cursos (nome, valor) VALUES ('"+ipNomeCurso.value+"', '"+ipValorCurso.value+"')");
+          ipIdCurso.value = ""
+          ipNomeCurso.value = "";
+          ipValorCurso.value = "";
+          document.getElementById("check").innerHTML = "";
+          document.getElementById("btnAddCurso").innerText = "Salve";
+          // curso_list();
+        }
+        
+        // ipNomeCurso.value = "";
+        // ipCargaHoraria.value = "";
+        // ipValorCurso.value = "";
+      });
+        function editCurso(id){
+          db.transaction(function(tx){
+          tx.executeSql("SELECT * FROM cursos WHERE id=? ", [id], function (tx, resultado){
+              console.log(resultado.rows[0])
+              ipIdCurso.value = resultado.rows[0].id;
+              ipNomeCurso.value = resultado.rows[0].nome;
+              ipValorCurso.value = resultado.rows[0].valor;
+              document.getElementById("btnAddCurso").innerText = "Update";
+              document.getElementById("check").innerHTML += "<div class='form-check'>"+
+                "<input class='form-check-input' type='checkbox' value='false' id='flexCheckDefault'>"+
+                "<label class='form-check-label' for='flexCheckDefault'>Adicionar um novo?</label></div>";
+          });
+      });
+      }
+      function delCurso(_id){
+          console.log(_id);
+          // if(tipo == "curso"){
+              addDados("DELETE FROM cursos WHERE id="+_id)
+              
+          // }
+      }
+    </script>
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      
+      <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+     
+  </body>
+</html>
